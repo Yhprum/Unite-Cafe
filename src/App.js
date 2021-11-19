@@ -18,7 +18,7 @@ function App() {
         For Pokemon unite discussion, consider checking out the <a href="https://reddit.com/r/pokemonunite">Pokemon Unite Subreddit</a>.
         <br/>
         <br/>
-        <small>© unite-cafe.com 2021 <a href="https://github.com/Yhprum/Unite-Cafe">View Source Code</a>  <a href="mailto:unite-forums@gmail.com">Contact me</a></small>
+        <small>© unite-cafe.com 2021 <a href="https://github.com/Yhprum/Unite-Cafe">View Source Code</a>  <a href="mailto:unite.forums@gmail.com">Contact me</a></small>
       </div>
     </div>
   );
