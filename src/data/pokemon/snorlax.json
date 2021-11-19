@@ -1,0 +1,96 @@
+{
+  "name": "Snorlax",
+  "number": "143",
+  "difficulty": "Novice",
+  "range": "Melee",
+  "role": "Defender",
+  "evolution": [
+    "No evolution"
+  ],
+  "passive": {
+    "name": "Gluttony",
+    "description": "Increases the effects gained from eating Berries."
+  },
+  "stats": {
+    "scoring": 3,
+    "combat": 3,
+    "mobility": 4,
+    "assistance": 5,
+    "resistance": 10,
+    "total": 25
+  },
+  "basic attack": {
+    "description": "Becomes a boosted attack with every third attack. When this boosted attack hits, it deals damage to nearby opposing Pokemon and decreases their movement speed for a short time."
+  },
+  "moves": {
+    "1": {
+      "base": {
+        "category": "Dash",
+        "cooldown": 6,
+        "name": "Tackle",
+        "description": "Has the user charge forward belly first, dealing damage to opposing Pokemon in the area of effect and decreasing their movement speed for a short time. The next basic attack will be a boosted attack.",
+        "upgradeLevel": 6
+      },
+      "upgrades": [
+        {
+          "category": "Dash",
+          "upgrade": {
+            "description": "Increased damage dealt.",
+            "level": 12
+          },
+          "cooldown": 7,
+          "name": "Heavy Slam",
+          "description": "Has the user slam their heavy body down, dealing damage to opposing Pokemon in the area of effect and {{shoving|knock up}} them."
+        },
+        {
+          "category": "Hindrance",
+          "upgrade": {
+            "description": "Increases damage dealt by this move.",
+            "level": 12
+          },
+          "cooldown": 6.5,
+          "name": "Flail",
+          "description": "Has the user flail about, increasing the user's basic attack damage the lower the user's HP is."
+        }
+      ]
+    },
+    "2": {
+      "base": {
+        "category": "Recovery",
+        "cooldown": 10,
+        "name": "Rest",
+        "description": "Has the user fall asleep on the spot and restores their HP. Blocks the movement of all Pokemon not on the user's team while this move is in effect.",
+        "upgradeLevel": 8
+      },
+      "upgrades": [
+        {
+          "category": "Hindrance",
+          "upgrade": {
+            "description": "Reduces the damage the user receives while this move is in effect.",
+            "level": 14
+          },
+          "cooldown": 11,
+          "name": "Block",
+          "description": "Has the user spread their arms wide to create a wall and grants them a shield. Prevents Pokemon from passing through the wall and {{shoves|knockback}} opposing Pokemon that run into it."
+        },
+        {
+          "category": "Hindrance",
+          "upgrade": {
+            "description": "Also decreases the movement speed of opposing Pokemon for a short time when this move hits.",
+            "level": 14
+          },
+          "cooldown": 12,
+          "name": "Yawn",
+          "description": "Has the user let loose a huge yawn that lulls opposing Pokemon into a sleepy haze, putting opposing Pokemon hit by this move to sleep."
+        }
+      ]
+    },
+    "unite": {
+      "category": "Buff",
+      "cooldown": 1,
+      "name": "Power Nap",
+      "description": "Has the user fall asleep and begin to snore, dealing damage over time to opposing Pokemon in the area of effect while restoring the user's HP. Using certain moves while asleep allows the user to role over, dealing further damage to opposing Pokemon in the area of effect.",
+      "upgradeLevel": 10
+    }
+  }
+}

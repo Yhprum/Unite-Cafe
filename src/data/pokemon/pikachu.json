@@ -1,0 +1,96 @@
+{
+  "name": "Pikachu",
+  "number": "025",
+  "difficulty": "Novice",
+  "range": "Ranged",
+  "role": "Attacker",
+  "evolution": [
+    "No Evolution"
+  ],
+  "passive": {
+    "name": "Static",
+    "description": "Decreases the movement speed of all opponents near the Pokemon for a short time when the Pokemon receives damage. This Ability goes on a cooldown after it's triggered."
+  },
+  "stats": {
+    "scoring": 4,
+    "combat": 9,
+    "mobility": 5,
+    "assistance": 3,
+    "resistance": 3,
+    "total": 24
+  },
+  "basic attack": {
+    "description": "Becomes a boosted attack with every third attack, dealing increased damage. This boosted attack also paralyzes opposing Pokemon for a short time when it hits."
+  },
+  "moves": {
+    "1": {
+      "base": {
+        "category": "Sure Hit",
+        "cooldown": 5,
+        "name": "Thunder Shock",
+        "description": "Releases electricity, dealing damage to opposing Pokemon in the area of effect. Also paralyzes opposing Pokemon for a short time.",
+        "upgradeLevel": 5
+      },
+      "upgrades": [
+        {
+          "category": "Sure Hit",
+          "upgrade": {
+            "description": "Increases damage dealt by this move.",
+            "level": 11
+          },
+          "cooldown": 5,
+          "name": "Electro Ball",
+          "description": "Hurls an electric orb, dealing damage to opposing Pokemon in the area of effect. Also paralyzes opposing Pokemon for a short time."
+        },
+        {
+          "category": "Area",
+          "upgrade": {
+            "description": "Increases the number of times this move attacks.",
+            "level": 11
+          },
+          "cooldown": 8,
+          "name": "Thunder",
+          "description": "Drops wicked thunderbolts, dealing damage to opposing Pokemon in the area of effect."
+        }
+      ]
+    },
+    "2": {
+      "base": {
+        "category": "Hindrance",
+        "cooldown": 9,
+        "name": "Electro Web",
+        "description": "Attacks and captures opposing Pokemon using an electric net, leaving them unable to move.",
+        "upgradeLevel": 6
+      },
+      "upgrades": [
+        {
+          "category": "Hindrance",
+          "upgrade": {
+            "description": "Reduced cooldown.",
+            "level": 13
+          },
+          "cooldown": 10,
+          "name": "Volt Tackle",
+          "description": "Has the user electrify itself and charge ahead, {{throwing|knock up}} opposing Pokemon. "
+        },
+        {
+          "category": "Hindrance",
+          "upgrade": {
+            "description": "Increased damage dealt.",
+            "level": 13
+          },
+          "cooldown": 8,
+          "name": "Thunderbolt",
+          "description": "Attacks with a strong electric blast, dealing damage to opposing Pokemon in the area of effect and leaving them {{unable to act|stun}}."
+        }
+      ]
+    },
+    "unite": {
+      "category": "Area",
+      "cooldown": 1,
+      "name": "Thunderstorm",
+      "description": "Attacks opposing Pokemon near the user with tremendous bolts of lightning.",
+      "level": 9
+    }
+  }
+}

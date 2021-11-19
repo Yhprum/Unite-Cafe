@@ -1,0 +1,96 @@
+{
+  "name": "Cinderace",
+  "number": "813",
+  "difficulty": "Novice",
+  "range": "Ranged",
+  "role": "Attacker",
+  "evolution": [
+    "Level 1 Scorbunny, Level 5 Raboot, Level 7 Cinderace"
+  ],
+  "passive": {
+    "name": "Blaze",
+    "description": "When the Pokemon is at half HP or less, its critical-hit rate and attack speed are increased. When the Pokemon uses a move, its next basic attack becomes a boosted attack."
+  },
+  "stats": {
+    "scoring": 5,
+    "combat": 8,
+    "mobility": 6,
+    "assistance": 1,
+    "resistance": 3,
+    "total": 23
+  },
+  "basic attack": {
+    "description": "Becomes a boosted attack with every third attack, dealing increased damage when it hits."
+  },
+  "moves": {
+    "1": {
+      "base": {
+        "category": "Sure Hit",
+        "cooldown": 6,
+        "name": "Ember",
+        "description": "The user launches a small flame attack to a designated opponent that inflicts burn status. This attack will trigger additional damage for the next 3 times they do any attack.",
+        "upgradeLevel": 7
+      },
+      "upgrades": [
+        {
+          "category": "Ranged",
+          "upgrade": {
+            "description": "Basic attacks after this move hits reduce this move's colldown (up to three times).",
+            "level": 11
+          },
+          "cooldown": 7,
+          "name": "Pyro Ball",
+          "description": "Launches a fire ball in a straight line and inflicts burn status. This attack will trigger additional damage for the next 3 times they do any attack."
+        },
+        {
+          "category": "Sure Hit",
+          "upgrade": {
+            "description": "Increases basic attack speed for a short time when this move hits.",
+            "level": 11
+          },
+          "cooldown": 8,
+          "name": "Blaze Kick",
+          "description": "Cinderace kicks at a designated area. At the end of the move, the user jumps back on initial position. On hit, the opponent will be knocked back and gets inflicted with burn status. This attack will trigger additional damage for the next 3 times they do any attack."
+        }
+      ]
+    },
+    "2": {
+      "base": {
+        "category": "Dash",
+        "cooldown": 7.5,
+        "name": "Low Sweep",
+        "description": "Attacks with a low sweep in the designated direction, dealing damage when it hits. Also decreases the movement speed of opposing Pokemon for a short time when they are hit by the user's next boosted attack.",
+        "upgradeLevel": 8
+      },
+      "upgrades": [
+        {
+          "category": "Dash",
+          "upgrade": {
+            "description": "Increases basic attack speed for a short time when this move ends.",
+            "level": 13
+          },
+          "cooldown": 6,
+          "name": "Flame Charge",
+          "description": "Has the user charge forward in the designated direction, dealing damage when it hits. Also increases the range and damage of the user's next basic attack."
+        },
+        {
+          "category": "Buff",
+          "upgrade": {
+            "description": "The next 3 basic attacks will restore health.",
+            "level": 13
+          },
+          "cooldown": 13,
+          "name": "Feint",
+          "description": "Increases the user's movement speed for a short time and makes them invincible. Inf used while the user is affected by hindrances, removes any hindrances affecting the user."
+        }
+      ]
+    },
+    "unite": {
+      "category": "Sure Hit",
+      "cooldown": 1,
+      "name": "Blazing Bicycle Kick",
+      "description": "Kicks a giant fireball toward the designated location, which then explodes, dealing damage to opposing Pokemon in the area of effect. This Unite Move increases the user's movement speed for a short time when it hits.",
+      "level": 9
+    }
+  }
+}

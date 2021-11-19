@@ -1,0 +1,96 @@
+{
+  "name": "Gengar",
+  "number": "092",
+  "difficulty": "Expert",
+  "range": "Melee",
+  "role": "Speedster",
+  "evolution": [
+    "Level 1 Ghastly, Level 5 Haunter, Level 9 Gengar"
+  ],
+  "passive": {
+    "name": "Levitate",
+    "description": "When the Pokemon is not in combat, its movement speed is increased."
+  },
+  "stats": {
+    "scoring": 6,
+    "combat": 7,
+    "mobility": 8,
+    "assistance": 1,
+    "resistance": 4,
+    "total": 26
+  },
+  "basic attack": {
+    "description": "Becomes a boosted attack with every third attack, dealing increased damage to nearby opposing Pokemon when it hits."
+  },
+  "moves": {
+    "1": {
+      "base": {
+        "category": "Ranged",
+        "cooldown": 5,
+        "name": "Will-o-Wisp",
+        "description": "Shoots multiple sinister flames, dealing damage to opposing Pokemon and leaving them burned when it hits.",
+        "upgradeLevel": 5
+      },
+      "upgrades": [
+        {
+          "category": "Ranged",
+          "upgrade": {
+            "description": "Increased damage dealt.",
+            "level": 11
+          },
+          "cooldown": 4.5,
+          "name": "Shadow Ball",
+          "description": "Hurls a shadowy blob at the target, decreasing the movement speed and Sp. Def of opposing Pokemon for a short time when it hits."
+        },
+        {
+          "category": "Area",
+          "upgrade": {
+            "description": "Increase the poison effect's duration.",
+            "level": 11
+          },
+          "cooldown": 8,
+          "name": "Sludge Bomb",
+          "description": "Hurls unsanitary sludge to the designated area, leaving opposing Pokemon poisoned when it hits."
+        }
+      ]
+    },
+    "2": {
+      "base": {
+        "category": "Area",
+        "cooldown": 7,
+        "name": "Lick",
+        "description": "Attacks with the user's tongue and pulls opposing Pokemon toward the user.",
+        "upgradeLevel": 7
+      },
+      "upgrades": [
+        {
+          "category": "Ranged",
+          "upgrade": {
+            "description": "Increases the amount of damage dealt and HP restored by this move.",
+            "level": 13
+          },
+          "cooldown": 7,
+          "name": "Dream Eater",
+          "description": "Launches hypnotic waves, on hit with enemy Pokemon causes them to fall sleep and allows Gengar to use this move again to appear behind enemy Pokemon and attack. This attack restores HP and reduces the cooldown of a specific move."
+        },
+        {
+          "category": "Dash",
+          "upgrade": {
+            "description": "Increased damage dealt.",
+            "level": 13
+          },
+          "cooldown": 7.5,
+          "name": "Hex",
+          "description": "Has the user disappear and then reappear at the designated location, dealing damage to the opposing Pokemon in the area of effect. If this hits an opposing Pokemon that is poisoned, it deals increased damage and its cooldown is reduced."
+        }
+      ]
+    },
+    "unite": {
+      "category": "Dash",
+      "cooldown": 1,
+      "name": "Phantom Ambush",
+      "description": "Has the user jump to the designated area and allows them to start sneaking with increased movement speed. If used again, deals damage to opposing Pokemon in the area of effect and decreases their movement speed for a short time.",
+      "level": 9
+    }
+  }
+}

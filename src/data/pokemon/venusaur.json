@@ -1,0 +1,96 @@
+{
+  "name": "Venusaur",
+  "number": "001",
+  "difficulty": "Intermediate",
+  "range": "Ranged",
+  "role": "Attacker",
+  "evolution": [
+    "Level 1 Bulbasaur, Level 5 Ivysaur, Level 9 Venusaur"
+  ],
+  "passive": {
+    "name": "Overgrow",
+    "description": "When the Pokemon is at low HP, the damage it deals is increased."
+  },
+  "stats": {
+    "scoring": 5,
+    "combat": 9,
+    "mobility": 4,
+    "assistance": 2,
+    "resistance": 4,
+    "total": 24
+  },
+  "basic attack": {
+    "description": "Becomes a boosted attack with every third attack, dealing increased damage. This boosted attack also pulls opposing Pokemon inward between the user's vines."
+  },
+  "moves": {
+    "1": {
+      "base": {
+        "category": "Ranged",
+        "cooldown": 6,
+        "name": "Seed Bomb",
+        "description": "Hurls a large seed at the designated area, dealing damage to opposing Pokemon in the area of effect.",
+        "upgradeLevel": 5
+      },
+      "upgrades": [
+        {
+          "category": "Ranged",
+          "upgrade": {
+            "description": "Increased AOE radius.",
+            "level": 11
+          },
+          "cooldown": 6,
+          "name": "Sludge Bomb",
+          "description": "Hurls an unsanitary sludge to the designated area, dealing damage over time to opposing Pokemon in the area of effect and decreasing their movement speed and Sp. Def for a short time."
+        },
+        {
+          "category": "Recovery",
+          "upgrade": {
+            "description": "Increases amount of HP restored.",
+            "level": 13
+          },
+          "cooldown": 8,
+          "name": "Giga Drain",
+          "description": "Drains nutrients from opposing Pokemon in the area of effect, dealing damage to opposing Pokemon and restoring the user's HP when it hits. Also reduces the damage the user receives for a short time."
+        }
+      ]
+    },
+    "2": {
+      "base": {
+        "category": "Area",
+        "cooldown": 9,
+        "name": "Razor Leaf",
+        "description": "Launches many sharp-edged leaves in a quick succession of attacks, dealing damage to opposing Pokemon in the area of effect.",
+        "upgradeLevel": 7
+      },
+      "upgrades": [
+        {
+          "category": "Area",
+          "upgrade": {
+            "description": "Reduces move charge time and cooldown.",
+            "level": 13
+          },
+          "cooldown": 11,
+          "name": "Solar Beam",
+          "description": "Blasts a bundled beam of light, dealing damage to opposing Pokemon in the area of effect."
+        },
+        {
+          "category": "Area",
+          "upgrade": {
+            "description": "Increased AOE radius.",
+            "level": 11
+          },
+          "cooldown": 11,
+          "name": "Petal Dance",
+          "description": "Scatters petals around the user, increasing movement speed for a short time and dealing damage over time to opposing Pokemon in the area of effect."
+        }
+      ]
+    },
+    "unite": {
+      "category": "Area",
+      "cooldown": 1,
+      "name": "Verdant Anger",
+      "description": "Launches a giant seed toward the designated area. The seed then splits apart, dealing damage to opposing Pokemon in the area of effect and decreasing their movement speed for a short time.",
+      "level": 9
+    }
+  }
+}

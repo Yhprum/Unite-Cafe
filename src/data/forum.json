@@ -1,0 +1,37 @@
+{
+  "Site Resources": [
+    {
+      "topic": "announcements",
+      "title": "Announcements"
+    },
+    {
+      "topic": "questions-suggestions",
+      "title": "Questions and Suggestions"
+    }
+  ],
+  "Metagame": [
+    {
+      "topic": "general-discussion",
+      "title": "General Discussion"
+    },
+    {
+      "topic": "character-discussion",
+      "title": "Character Discussions"
+    },
+    {
+      "topic": "gameplay-discussion",
+      "title": "Gameplay Discussions"
+    },
+    {
+      "topic": "build-guides",
+      "title": "Build Guides"
+    }
+  ],
+  "The Battle Arena": [
+    {
+      "topic": "tournaments",
+      "title": "Tournaments",
+      "locked": true
+    }
+  ]
+}

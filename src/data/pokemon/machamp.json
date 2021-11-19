@@ -1,0 +1,96 @@
+{
+  "name": "Machamp",
+  "number": "066",
+  "difficulty": "Intermediate",
+  "range": "Melee",
+  "role": "All-Rounder",
+  "evolution": [
+    "Level 1 Machop, Level 5 Machoke, Level 9 Machamp"
+  ],
+  "passive": {
+    "name": "Guts",
+    "description": "Increase the Pokemon's Attack when the Pokemon is afflicted by a status condition"
+  },
+  "stats": {
+    "scoring": 5,
+    "combat": 8,
+    "mobility": 5,
+    "assistance": 2,
+    "resistance": 5,
+    "total": 25
+  },
+  "basic attack": {
+    "description": "Every third basic attack is a boosted attack that deals increased damage when it lands successfully."
+  },
+  "moves": {
+    "1": {
+      "base": {
+        "category": "Melee",
+        "cooldown": 6,
+        "name": "Karate Chop",
+        "description": "Attacks opposing Pokemon with a sharp chop.",
+        "upgradeLevel": 5
+      },
+      "upgrades": [
+        {
+          "category": "Melee",
+          "upgrade": {
+            "description": "Deals increased damage to Pokemon that are affected by a status condition.",
+            "level": 11
+          },
+          "cooldown": 7,
+          "name": "Close Combat",
+          "description": "Unleashes a series of punches in the designated direction, dealing increased damage with the last punch. The user can move while using this move and becomes immune to hindrances."
+        },
+        {
+          "category": "Dash",
+          "upgrade": {
+            "description": "Increases Attack with each basic attack, up to a set max.",
+            "level": 11
+          },
+          "cooldown": 6,
+          "name": "Cross Chop",
+          "description": "Has the user deliver a double chop with forearms crossed while dashing forward. This also increases the user's critical-hit rate."
+        }
+      ]
+    },
+    "2": {
+      "base": {
+        "category": "Buff",
+        "cooldown": 10,
+        "name": "Bulk Up",
+        "description": "After using this move, the user becomes immune to hindrances for a short time, their movement speed and Attack are increased, and their basic attack speed is increased. The user's next basic attack also becomes a boosted attack.",
+        "upgradeLevel": 7
+      },
+      "upgrades": [
+        {
+          "category": "Dash",
+          "upgrade": {
+            "description": "Futher increases Attack and movement speed.",
+            "level": 13
+          },
+          "cooldown": 9,
+          "name": "Dynamic Punch",
+          "description": "Has the user jump to the designated location, dealing damage to opposing Pokemon in the area of effect nd leaving them unable to act when it hits. After using this move, the user becomes immune to hindrances for a short time, their movement speed is increased, and their basic attack speed is increased. The user's next basic attack also becomes a boosted attack."
+        },
+        {
+          "category": "Hindrance",
+          "upgrade": {
+            "description": "Futher increases critical-hit rate and increases basic attack speed.",
+            "level": 13
+          },
+          "cooldown": 11,
+          "name": "Submission",
+          "description": "Releases Machamp's power, making it into a status immune state and increases movement speed. The next normal attack deals additional damage and hits the ground in the targeted direction, causing damage and immobilization. Afterwards, increase attack."
+        }
+      ]
+    },
+    "unite": {
+      "category": "Buff",
+      "cooldown": 1,
+      "name": "Barrage Blow",
+      "description": "Increases the user's movement speed, Attack, Defense, and Sp. Def for a short time. If used again, unleashes a combo attack, dealing damage to opposing Pokemon in the area of effect and {{shoving them|knockback}}. The final blow deals an especially large amount of damage.",
+      "level": 9
+    }
+  }
+}

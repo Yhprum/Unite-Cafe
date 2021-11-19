@@ -1,0 +1,96 @@
+{
+  "name": "Blastoise",
+  "number": "007",
+  "difficulty": "Intermediate",
+  "range": "Ranged",
+  "role": "Defender",
+  "evolution": [
+    "Level 1 Squirtle, Level 5 Wartortle, Level 9 Blastoise"
+  ],
+  "passive": {
+    "name": "Torrent",
+    "description": "When the Pokemon is at half HP or less, its Attack and Sp. Atk are increased."
+  },
+  "stats": {
+    "scoring": 4,
+    "combat": 4,
+    "mobility": 4,
+    "assistance": 6,
+    "resistance": 7,
+    "total": 25
+  },
+  "basic attack": {
+    "description": "-"
+  },
+  "moves": {
+    "1": {
+      "base": {
+        "category": "Ranged",
+        "cooldown": 9,
+        "name": "Water Gun",
+        "description": "Attacks with a shot of water, decreasing the movement speed of opposing Pokemon for a short time. Also {{shoves|knockback}} opposing Pokemon and leaves then {{unable to act|stun}} after they are shoved the maximum distance.",
+        "upgradeLevel": 5
+      },
+      "upgrades": [
+        {
+          "category": "Ranged",
+          "upgrade": {
+            "description": "Increased damage dealt.",
+            "level": 11
+          },
+          "cooldown": 10,
+          "name": "Hydro Pump",
+          "description": "Shoots a fierce stream of water which knocks back opponents hit. Enemy Pokemon who are knocked back the furthest are stunned for a while."
+        },
+        {
+          "category": "Area",
+          "upgrade": {
+            "description": "Increased damage dealt.",
+            "level": 11
+          },
+          "cooldown": 9,
+          "name": "Water Spout",
+          "description": "Spouts water toward the designated location, decreasing the movement speed of opposing Pokemon in the area of effect for a short time."
+        }
+      ]
+    },
+    "2": {
+      "base": {
+        "category": "Dash",
+        "cooldown": 10,
+        "name": "Skull Bash",
+        "description": "Fiercely rams an opposing Pokemon and leaves it {{unable to act|stun}}.",
+        "upgradeLevel": 7
+      },
+      "upgrades": [
+        {
+          "category": "Dash",
+          "upgrade": {
+            "description": "Grants a shield when this move hits.",
+            "level": 13
+          },
+          "cooldown": 12,
+          "name": "Surf",
+          "description": "Has the user charge forward on a wave, {{shoving|knockback}} opposing Pokemon and leaving them unable to act."
+        },
+        {
+          "category": "Buff",
+          "upgrade": {
+            "description": "Increase movement speed and reduce damage taken.",
+            "level": 13
+          },
+          "cooldown": 11,
+          "name": "Rapid Spin",
+          "description": "Retracts into its shell and spins while strengthening basic attacks and spraying moves."
+        }
+      ]
+    },
+    "unite": {
+      "category": "Melee",
+      "cooldown": 1,
+      "name": "Hydro Typhoon",
+      "description": "Spouts water to attack while spinning and {{throws|knock up}} opposing Pokemon in a large area. The user is shielded while using this move.",
+      "level": 9
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "name": "Slowbro",
+  "number": "079",
+  "difficulty": "Intermediate",
+  "range": "Ranged",
+  "role": "Defender",
+  "evolution": [
+    "Level 1 Slowpoke, Level 4 Slowbro"
+  ],
+  "passive": {
+    "name": "Oblivious",
+    "description": "When the Pokemon receives damage, the HP loss is gradual. When damaging an opponent with a move, the Pokemon nullifies some of the gradual HP loss it has yet to receive, and it also decreases the target's Sp. Def."
+  },
+  "stats": {
+    "scoring": 3,
+    "combat": 3,
+    "mobility": 3,
+    "assistance": 8,
+    "resistance": 8,
+    "total": 25
+  },
+  "basic attack": {
+    "description": "Becomes a boosted attack with every third attack. When this boosted attack hits, it deals damage to opposing Pokemon in the area of effect and decreases their Sp. Def for a short time."
+  },
+  "moves": {
+    "1": {
+      "base": {
+        "category": "Melee",
+        "cooldown": 5,
+        "name": "Water Gun",
+        "description": "Slowbro builds up power to shoot a fierce stream of water which deals damage and lowers the speed of the enemy Pokemon. The longer Slowbro takes to build up power, the range of the move, slowing effect and damage increases.",
+        "upgradeLevel": 4
+      },
+      "upgrades": [
+        {
+          "category": "Melee",
+          "upgrade": {
+            "description": "Increases the vapor's area of effect.",
+            "level": 11
+          },
+          "cooldown": 5,
+          "name": "Scald",
+          "description": "Shoots scalding water which does AOE damage. This move also lowers the speed and the attack of the enemy Pokemon. When hit, steam will emit from the enemy Pokemon."
+        },
+        {
+          "category": "Dash",
+          "upgrade": {
+            "description": "Makes last 2 waves become bigger, knocking opponents up.",
+            "level": 11
+          },
+          "cooldown": 9,
+          "name": "Surf",
+          "description": "Has the user charge forward on waves. The first wave deals damage to opposing Pokemon in the area of effect and {{throws them|knockback}}."
+        }
+      ]
+    },
+    "2": {
+      "base": {
+        "category": "Recovery",
+        "cooldown": 11,
+        "name": "Slack Off",
+        "description": "Lies down and takes a rest, while continuously regaining health. The longer Slowpoke stays still for, the more health it recovers.",
+        "upgradeLevel": 6
+      },
+      "upgrades": [
+        {
+          "category": "Recovery",
+          "upgrade": {
+            "description": "Increased SpA.",
+            "level": 13
+          },
+          "cooldown": 13,
+          "name": "Amnesia",
+          "description": "Slowbro clears its mind to regain some health. After usage, enters a status-immune state and increases defense and damage dealt by special moves."
+        },
+        {
+          "category": "Hindrance",
+          "upgrade": {
+            "description": "Increase move speed and range.",
+            "level": 13
+          },
+          "cooldown": 11,
+          "name": "Telekinesis",
+          "description": "Makes opposing Pokemon float with psychic power. If used again, pulls the opposing Pokemon toward the user."
+        }
+      ]
+    },
+    "unite": {
+      "category": "Hindrance",
+      "cooldown": 1,
+      "name": "Slowbeam",
+      "description": "Has the user stare at an opposing Pokemon and attack continually, dealing damage and {{binding|root}} them. Shields the user and makes them unstoppable while they're using this move.",
+      "level": 9
+    }
+  }
+}

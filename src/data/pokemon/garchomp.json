@@ -1,0 +1,96 @@
+{
+  "name": "Garchomp",
+  "number": "443",
+  "difficulty": "Intermediate",
+  "range": "Melee",
+  "role": "All-Rounder",
+  "evolution": [
+    "Level 1 Gible, Level 6 Gabite, Level 10 Garchomp"
+  ],
+  "passive": {
+    "name": "Rough Skin",
+    "description": "When the Pokemon is struck by a melee attack, a portion of the damage received is reflected back at the attacker."
+  },
+  "stats": {
+    "scoring": 5,
+    "combat": 7,
+    "mobility": 5,
+    "assistance": 1,
+    "resistance": 7,
+    "total": 25
+  },
+  "basic attack": {
+    "description": "Becomes a boosted attack with every fifth attack, dealing increased damage and restoring the user's HP. Every time one of the user's basic attacks or moves hit an opposing Pokemon, the user's basic attack speed is increased. (Effect stacks up to 5 times.)"
+  },
+  "moves": {
+    "1": {
+      "base": {
+        "category": "Debuff",
+        "cooldown": 6,
+        "name": "Sand Attack",
+        "description": "Hurls sand at opposing Pokemon, narrowing their field of vision and increasing the user's movement speed and basic attack speed when it hits.",
+        "upgradeLevel": 6
+      },
+      "upgrades": [
+        {
+          "category": "Dash",
+          "upgrade": {
+            "description": "Increase the user's movement speed while this move is in effect.",
+            "level": 11
+          },
+          "cooldown": 8,
+          "name": "Dig",
+          "description": "Has the user move quickly underground and jump out when they come in contact with an opposing Pokemon, dealing damage to opposing Pokemon in the area of effect and throwing them. If this move is used inside Earthquake's area of effect, the ground will split open in the wake of the user, widening this move's area of effect."
+        },
+        {
+          "category": "Dash",
+          "upgrade": {
+            "description": "Decreases the movement speed of opposing Pokemon for a short time when they are shoved by this move the maximum distance.",
+            "level": 13
+          },
+          "cooldown": 8,
+          "name": "Dragon Rush",
+          "description": "Has the user dive into the designated direction, {{shoving|knockback}} opposing Pokemon."
+        }
+      ]
+    },
+    "2": {
+      "base": {
+        "category": "Area",
+        "cooldown": 5,
+        "name": "Bulldoze",
+        "description": "Has the user stomp down on the ground, dealing damage to opposing Pokemon in the area of effect.",
+        "upgradeLevel": 8
+      },
+      "upgrades": [
+        {
+          "category": "Area",
+          "upgrade": {
+            "description": "Decreases the movement speed of opposing Pokemon for a short time if they are in this move's area of effect.",
+            "level": 13
+          },
+          "cooldown": 7,
+          "name": "Earthquake",
+          "description": "Has the user jump high into the air and crash forcefully to the ground, dealing damage to opposing Pokemon in the area of effect."
+        },
+        {
+          "category": "Melee",
+          "upgrade": {
+            "description": "Increased damage dealt.",
+            "level": 11
+          },
+          "cooldown": 5,
+          "name": "Dragon Claw",
+          "description": "Has the user attack in two parts while dashing forward. The first deals damage to opposing Pokemon and {{throws them|knockback}}. The second deals increased damage and increases the user's basic attack speed."
+        }
+      ]
+    },
+    "unite": {
+      "category": "Melee",
+      "cooldown": 1,
+      "name": "Livid Outrage",
+      "description": "Has the user unleash a powerful chain attack while dashing forward. The final attack {{throws|knock up}} opposing Pokemon but also leaves the user {{unable to act|stun}} for a short time.",
+      "level": 10
+    }
+  }
+}

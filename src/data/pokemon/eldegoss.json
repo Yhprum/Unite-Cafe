@@ -1,0 +1,96 @@
+{
+  "name": "Eldegoss",
+  "number": "829",
+  "difficulty": "Novice",
+  "range": "Ranged",
+  "role": "Supporter",
+  "evolution": [
+    "Level 1 Gossifleur, Level 4 Eldegoss"
+  ],
+  "passive": {
+    "name": "Cotton Down",
+    "description": "When Eldegoss has been damaged over a certain value, cotton will burst, which will increase Eldegoss’ movement speed and regain some health."
+  },
+  "stats": {
+    "scoring": 5,
+    "combat": 3,
+    "mobility": 5,
+    "assistance": 8,
+    "resistance": 4,
+    "total": 25
+  },
+  "basic attack": {
+    "description": "Becomes a boosted attack with every third attack, attaching cotton to the Pokémon. If you use a basic attack on a Pokémon with cotton, the damage will increase and their movement speed will be reduced."
+  },
+  "moves": {
+    "1": {
+      "base": {
+        "category": "Ranged",
+        "cooldown": 6,
+        "name": "Leafage",
+        "description": "Pelts the target with leaves, decreasing the movement speed of opposing Pokemon for a short time when it hits.",
+        "upgradeLevel": 4
+      },
+      "upgrades": [
+        {
+          "category": "Ranged",
+          "upgrade": {
+            "description": "In addition, while a Pollen Puff is attached to them, opposing Pokemon receive damage over time and ally Pokemon receive less damage.",
+            "level": 11
+          },
+          "cooldown": 5,
+          "name": "Pollen Puff",
+          "description": "Throws a Pollen Puff, which attaches to a Pokemon. The Pollen Puff restores HP for ally Pokemon and deals damage to opposing Pokemon."
+        },
+        {
+          "category": "Ranged",
+          "upgrade": {
+            "description": "Decreases the accuracy of opposing Pokemon when this move hits.",
+            "level": 11
+          },
+          "cooldown": 9,
+          "name": "Leaf Tornado",
+          "description": "Attacks with a tornado of sharp leaves, leaving a path in its wake that increases ally Pokemon's movement speed for a short time."
+        }
+      ]
+    },
+    "2": {
+      "base": {
+        "category": "Recovery",
+        "cooldown": 8,
+        "name": "Synthesis",
+        "description": "Restores the HP of the user and nearby ally Pokemon.",
+        "upgradeLevel": 6
+      },
+      "upgrades": [
+        {
+          "category": "Buff",
+          "upgrade": {
+            "description": "Increases the user's movement speed while using this move.",
+            "level": 13
+          },
+          "cooldown": 7,
+          "name": "Cotton Guard",
+          "description": "Protects the user and nearby ally Pokemon with cotton. The cotton absorbs damage, and when the move ends, the cotton restores some HP."
+        },
+        {
+          "category": "Area",
+          "upgrade": {
+            "description": "Also throws opposing Pokemon when this move hits.",
+            "level": 13
+          },
+          "cooldown": 10,
+          "name": "Cotton Spore",
+          "description": "Gathers spores around the user that reduce damage received. The spores burst after a short time, dealing damage to opposing Pokemon in the area of effect and decreasing the movement speed of opposing Pokemon for a short time."
+        }
+      ]
+    },
+    "unite": {
+      "category": "Area",
+      "cooldown": 1,
+      "name": "Cotton Cloud Crash",
+      "description": "Has the user float into the air and become invincible. If used again, has the user pound the ground, attacking and {{shoving|knockback}} opposing Pokemon and restoring HP to ally Pokemon in the area of effect.",
+      "upgradeLevel": 9
+    }
+  }
+}

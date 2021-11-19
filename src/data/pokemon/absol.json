@@ -1,0 +1,94 @@
+{
+  "name": "Absol",
+  "number": "359",
+  "difficulty": "Expert",
+  "range": "Melee",
+  "role": "Speedster",
+  "evolution": null,
+  "passive": {
+    "name": "Super Luck",
+    "description": "Increases the Pokemon's critical-hit rate."
+  },
+  "stats": {
+    "combat": 7,
+    "resistance": 4,
+    "mobility": 8,
+    "scoring": 5,
+    "assistance": 1,
+    "total": 25
+  },
+  "basic attack": {
+    "description": "Becomes a boosted attack with every third attack, dealing damage to opposing Pokemon and lowering their Sp. Def when it hits. If this boosted attack hits only a single opposing Pokemon, it deals increased damage."
+  },
+  "moves": {
+    "1": {
+      "base": {
+        "name": "Feint",
+        "category": "Dash",
+        "description": "Has the user dash in an arc, attacking opposing Pokemon they come in contact with. This move ignores the Defense stat and shield effects of opposing Pokemon.",
+        "cooldown": 8,
+        "upgradeLevel": 5
+      },
+      "upgrades": [
+        {
+          "name": "Night Slash",
+          "category": "Dash",
+          "description": "Slashes in an outward arc, lowering the movement speed of opposing Pokemon for a short time when it hits. If used again, increases the user's critical-hit rate and has the user dash to the designated location, dealing damage to opposing Pokemon they come in contact with.",
+          "cooldown": 5,
+          "upgrade": {
+            "level": 11,
+            "description": "Added Life Steal effect."
+          }
+        },
+        {
+          "name": "Pursuit",
+          "category": "Dash",
+          "description": "Has the user dash to the designated location and quickly charge an opposing Pokemon with the next basic attack. If the basic attack lands from behind, its damage is increased and this move's cooldown is reduced.",
+          "cooldown": 5,
+          "upgrade": {
+            "level": 11,
+            "description": "Increased movement speed."
+          }
+        }
+      ]
+    },
+    "2": {
+      "base": {
+        "name": "Slash",
+        "category": "Melee",
+        "description": "Slashes with sharp claws in front of the user and increases the user's critical-hit rate.",
+        "cooldown": 6,
+        "upgradeLevel": 7
+      },
+      "upgrades": [
+        {
+          "name": "Psycho Cut",
+          "category": "Melee",
+          "description": "Uses Psychic Blades to attack forward. On hit, causes the next three basic attacks to deal additional damage to the target.",
+          "cooldown": 7,
+          "upgrade": {
+            "level": 13,
+            "description": "Increases the user's movement speed for a short time when this move hits."
+          }
+        },
+        {
+          "name": "Sucker Punch",
+          "category": "Hindrance",
+          "description": "Decrease the movement speed of both the user and target and delays the damage dealt. If Absol suffers damage during the move, {{knockback|knockback}} the target Pokemon.",
+          "cooldown": 7,
+          "upgrade": {
+            "level": 13,
+            "description": "Increases basic attack speed for a short time when this move hits."
+          }
+        }
+      ]
+    },
+    "unite": {
+      "name": "Midnight Slash",
+      "category": "Area",
+      "description": "Unleashes a flurry of slashes in front of the user. This move ends by unleashing powerful blades of energy, dealing increased damage to opposing Pokemon and {{shoving|knockback}} them.",
+      "cooldown": 1,
+      "level": 9
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "name": "Lucario",
+  "number": "448",
+  "difficulty": "Expert",
+  "range": "Melee",
+  "role": "All-Rounder",
+  "evolution": [
+    "No evolution"
+  ],
+  "passive": {
+    "name": "Steadfast",
+    "description": "ecomes a boosted attack every third attack, dealing extra damage and knocking enemies into the air."
+  },
+  "stats": {
+    "scoring": 6,
+    "combat": 6,
+    "mobility": 7,
+    "assistance": 1,
+    "resistance": 5,
+    "total": 25
+  },
+  "basic attack": {
+    "description": "Every third attack knocks enemies toward the Pokemon."
+  },
+  "moves": {
+    "1": {
+      "base": {
+        "category": "Dash",
+        "cooldown": 6,
+        "name": "Quick Attack",
+        "description": "Has the user lunge forward at a speed that makes them almost invisible, dealing damage to opposing Pokemon they come in contact with.",
+        "upgradeLevel": 5
+      },
+      "upgrades": [
+        {
+          "category": "Dash",
+          "upgrade": {
+            "description": "Increases Attack for a short time.",
+            "level": 11
+          },
+          "cooldown": 9,
+          "name": "Extreme Speed",
+          "description": "Attacks using lightning force. The waiting time of this move is reset when opponent Pokemon with an \u201cExtreme Speed Mark\u201d are hit."
+        },
+        {
+          "category": "Dash",
+          "upgrade": {
+            "description": "The user becomes immune to hindrances while charging power.",
+            "level": 11
+          },
+          "cooldown": 7,
+          "name": "Power-Up Punch",
+          "description": "Charges power before unleashing a powerful attack, dealing damage to opposing Pokemon and {{shoving|knockback}} them when it hits. Also changes the user's next basic attack into a boosted attack."
+        }
+      ]
+    },
+    "2": {
+      "base": {
+        "category": "Melee",
+        "cooldown": 7,
+        "name": "Meteor Mash",
+        "description": "Blasts forward with a punch like a comet, dealing damage to opposing Pokemon and shoving them.",
+        "upgradeLevel": 7
+      },
+      "upgrades": [
+        {
+          "category": "Melee",
+          "upgrade": {
+            "description": "Resets all of the user's move cooldown when this move is used a second time.",
+            "level": 13
+          },
+          "cooldown": 10,
+          "name": "Bone Rush",
+          "description": "Performs a combo attack with a bone, dealing multiple damaging blows to opposing Pokemon and leaving them {{unable to act|stun}} for a short time. The final attack sends the bone flying. If used again, the move has the user rush to the location of the bone."
+        },
+        {
+          "category": "Melee",
+          "upgrade": {
+            "description": "When this move is used, it grants the user a shield. While using this move, the user becomes immune to hindrances.",
+            "level": 13
+          },
+          "cooldown": 9,
+          "name": "Close Combat",
+          "description": "Unleashes a combo attack, dealing multiple blows to opposing Pokemon and {{shoving|knockback and stun}} them."
+        }
+      ]
+    },
+    "unite": {
+      "category": "Ranged",
+      "cooldown": 1,
+      "name": "Aura Cannon",
+      "description": "Focuses its entire body, then releases a wave attack and attaches an \u201cExtreme Speed mark\u201d to enemy Pokemon hit.",
+      "upgradeLevel": 9
+    }
+  }
+}
