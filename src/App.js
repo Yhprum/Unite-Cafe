@@ -1,33 +1,25 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import Auth from "./utils/Auth";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Routes from "./Routes";
-import Header from "./views/Header";
-import axios from "axios";
+import "./assets/css/forum.css";
+import logo from "./assets/images/branding/logo.png";
 
 function App() {
-  const [authContext, setAuthContext] = useState({ isLoggedIn: false });
-
-  useEffect(() => {
-    if (!authContext.isLoggedIn) {
-      axios.post("/api/user/tokenLogin", undefined, { withCredentials: true }).then(response => {
-        if (response.data.auth) {
-          setAuthContext({ isLoggedIn: true, user: response.data.user })
-        }
-      });
-    }
-  }, [authContext]);
 
   return (
-    <div className="App">
-      <Auth.Provider value={[authContext, setAuthContext]}>
-        <Router>
-          <Header />
-          <Routes />
-        </Router>
-      </Auth.Provider>
+    <div className="App forum">
+      <div className="container container-small">
+        <img src={logo} alt="Unite Cafe" style={{"height":"250px"}}/>
+        <br/>
+        Unite Cafe is no longer being maintained. Thank you all for joining and participating in this community during the time it was here.
+        <br/>
+        For Pokemon stats and movesets, please visit <a href="https://www.unite-db.com">Unite-DB</a> - their site has detailed numbers, movesets, and more.
+        <br/>
+        For Pokemon unite discussion, consider checking out the <a href="https://reddit.com/r/pokemonunite">Pokemon Unite Subreddit</a>.
+        <br/>
+        <br/>
+        <small>© unite-cafe.com 2021 <a href="https://github.com/Yhprum/Unite-Cafe">View Source Code</a>  <a href="mailto:unite-forums@gmail.com">Contact me</a></small>
+      </div>
     </div>
   );
 }
